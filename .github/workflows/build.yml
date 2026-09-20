@@ -21,11 +21,11 @@ jobs:
 
       - name: Install kivy-ios and Cython
         run: |
-          pip install "cython<3.0.0" kivy-ios
+          pip install "cython<3.0.0" kivy-ios requests
 
       - name: Build C-Recipes (Compile Python & Kivy for iOS)
         run: |
-          toolchain build python3 kivy requests
+          toolchain build python3 kivy
 
       - name: Create Xcode Project
         run: |
