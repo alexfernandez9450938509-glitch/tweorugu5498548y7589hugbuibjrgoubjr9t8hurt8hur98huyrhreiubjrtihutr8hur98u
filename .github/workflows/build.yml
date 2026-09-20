@@ -22,6 +22,9 @@ jobs:
       - name: Install kivy-ios
         run: |
           pip install kivy-ios
+          - name: Install kivy-ios and Cython
+        run: |
+          pip install "cython<3.0.0" kivy-ios
 
       - name: Build C-Recipes (Compile Python & Kivy for iOS)
         run: |
